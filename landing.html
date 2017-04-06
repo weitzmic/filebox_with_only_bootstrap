@@ -32,9 +32,10 @@
   .row{
     border: thin red solid;
   }
-  img,h1,h2,p{
+  *{
     border: thin green solid;
   }
+
   </style>
 </head>
 
@@ -42,7 +43,7 @@
 
 <body>
 
-
+  <!-- Nav Bar -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -108,19 +109,19 @@
     <div class="row">
       <!-- Row 2 Left -->
       <div class="col-md-offset-1 col-md-4">
-        <h1>Filebox works the way you do</h1>
+        <h3>Filebox works the way you do</h3>
         <p>Get to all your files from anywhere, on any device, and share them with anyone.</p>
       </div>
       <!-- Row 2 Right -->
       <div class="col-md-offset-2 col-md-4">
 
         <form>
-          <label for="exampleInputPassword1"></label>
+          <label for="exampleInputFullname1"></label>
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full name">
+            <input type="Full Name" class="form-control" id="exampleInputFullName1" placeholder="Full name">
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+            <input type="Email" class="form-control" id="exampleInputEmail1" placeholder="Email">
           </div>
           <div class="form-group">
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
@@ -130,7 +131,11 @@
               <input type="checkbox"> I agree to <a href="https://filebox-with-only-bootstrap.herokuapp.com/landing.html#"> Filebox terms </a>
             </label>
           </div>
-          <button type="submit" class="btn btn-default">Sign Up for Free</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Sign up for Free</button>
+
+          <hr>
+
+          <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-google" aria-hidden="true"></i> Sign up free with Google</button>
         </form>
 
 
@@ -139,120 +144,120 @@
     <div class="row">
       <!-- Row 3 Left -->
       <div class="col-md-offset-1 col-md-4">
-        <h1>Take your docs anywhere</h1>
+        <h3>Take your docs anywhere</h3>
         <p>Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.
           Get to all your files from anywhere, on any device, and share them with anyone.</p>
         </div>
         <!-- Row 3 Right -->
         <div class="col-md-offset-2 col-md-4">
-          <img src="assets/images/docs-anywhere.png">
+          <img src="assets/images/docs-anywhere.png" class="img-responsive">
         </div>
       </div>
       <div class="row">
         <!-- Row 4 Left -->
         <div class="col-md-offset-1 col-md-4">
-          <img src="assets/images/send-videos-quickly.png">
+          <img src="assets/images/send-videos-quickly.png" class="img-responsive">
         </div>
+        <!-- Row 4 Right -->
         <div class="col-md-offset-2 col-md-4">
-
+          <h3>Send videos quickly</h3>
+          <p>Send your entire wedding video to family with a simple link. It’s easy to share large files with anyone — even if they don’t have a Filebox account.</p>
         </div>
       </div>
       <div class="row">
+        <!-- Row 5 Left -->
         <div class="col-md-offset-1 col-md-4">
-
+          <h3>Keep your photos safe</h3>
+          <p>Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.</p>
         </div>
+        <!-- Row 5 Right -->
         <div class="col-md-offset-2 col-md-4">
-
+          <img src="assets/images/keep-your-photos-safe.png" class="img-responsive">
         </div>
       </div>
       <div class="row">
+        <!-- Row 6 Left -->
         <div class="col-md-offset-1 col-md-4">
-
+          <img src="assets/images/work-on-slides-together.png" class="img-responsive">
         </div>
+        <!-- Row 6 Right -->
         <div class="col-md-offset-2 col-md-4">
-
+          <h3>Work on slides together</h3>
+          <p>Edit a presentation with teammates without emailing files back and forth. When you edit a file in a shared folder, everyone gets the update automatically.</p>
         </div>
       </div>
       <div class="row">
+        <!-- Row 7 Left -->
         <div class="col-md-offset-1 col-md-4">
-
+          <h3>Never lose a file again</h3>
+          <p>Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.</p>
         </div>
+        <!-- Row 7 Right -->
         <div class="col-md-offset-2 col-md-4">
-
+          <img src="assets/images/never-lose-a-file-again.png" class="img-responsive">
         </div>
       </div>
       <div class="row">
+        <!-- Row 8 -->
         <div class="col-md-offset-4 col-md-4">
+          <div class="form-group">
+            <h3 class="text-center"> Get Started Now</h3>
+            <form>
+              <label for="exampleInputPassword1"></label>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> I agree to <a href="https://filebox-with-only-bootstrap.herokuapp.com/landing.html#"> Filebox terms </a>
+                </label>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Sign up for Free</button>
 
+              <hr>
+
+              <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-google" aria-hidden="true"></i> Sign up free with Google</button>
+            </form>
+
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-2">
 
-        </div>
-        <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
 
-        </div>
-        <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
 
-        </div>
-        <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
 
-        </div>
-        <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
 
-        </div>
-        <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
 
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- Old Stuff -->
-    <div class="container">
-
-
-      <div class="row">
-        <div class="col-md-12">
-
-        </div>
-      </div>
-
-
-      <div class="row">
-
-        <div class="col-md-4">
-        </div>
-
-
-        <div class="col-md-4">
-          There
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-
-        </div>
-
-        <div class="col-md-6">
-          <img src="assets/images/docs-anywhere.png">
-        </div>
-
-
-      </div>
 
 
 
-    </div>
-  </body>
-  </html>
+
+
+
+
+
+
+
+    </body>
+    </html>
